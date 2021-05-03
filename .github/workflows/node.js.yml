@@ -20,6 +20,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: 81661eafc457e7820a47b087decc26b46d39e18e
+      with:
+        args: 
+          sonar.organization=anthonyroyer16
+          sonar.projectKey=AnthonyRoyer16_CubeTesting
+          sonar.sources=.
     
     - uses: actions/checkout@v2
     - name: Use Node.js 14
