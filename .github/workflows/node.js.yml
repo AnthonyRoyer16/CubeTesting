@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.6
+    
     - uses: actions/checkout@v2
     - name: Use Node.js 14
       uses: actions/setup-node@v2
