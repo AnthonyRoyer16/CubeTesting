@@ -16,7 +16,7 @@ test('test image', () => {
   //Met dans une constante le rendue de l'app (le jsx) et l'utilise pour lire ces éléments
   const { container } =  render(<App />);
   //Test si l'élément recherhcer pas le nom de sa classe a un attribut src et check sa valeur
-  expect(container.getElementsByClassName("App-logo")[0]).toHaveAttribute('src', 'logo.svg')
+  expect(container.getElementsByClassName("App-logo")[0]).toHaveAttribute('src', 'logo2.svg')
 });
 
 //Deuxième type de test qui peut etre wrapper dans un test describe
